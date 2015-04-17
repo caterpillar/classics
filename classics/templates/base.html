@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    {% load staticfiles %}
+    <title>{% block title %}致敬经典{% endblock %}</title>
+    <meta name="description" content="提供经典书籍阅读 评注 学习 讨论 服务" />
+    <meta name="keywords" content="经典 阅读 学习 名著 古典 小说" />
+    <!-- Semantic 核心 CSS 文件 -->
+    <link href="../static/dist/semantic.css" rel='stylesheet' type='text/css'/>
+    {% block stylesheet %}{% endblock %}
+    {#    <script src="../static/js/require.config.js"></script>#}
+
+</head>
+{% block content %}{% endblock %}
+
+    <script src="../static/js/lib/jquery-2.1.3.js"></script>
+    <script src="../static/js/lib/less.min.js"></script>
+    <script src="../static/dist/semantic.js"></script>
+    {% block javascript %}{% endblock %}
+</html>
