@@ -42,7 +42,7 @@
 
     <!-- Page Contents -->
     <div class="pusher">
-        <div data-scrolld='target' class="ui inverted vertical masthead center aligned segment"
+        <div class="ui inverted vertical masthead center aligned segment header"
              style="background-image: url('../static/img/header_background.jpg')">
             <div class="ui container">
                 <div class="ui large secondary inverted pointing menu">
@@ -71,7 +71,7 @@
                 </h2>
 
                 <div id="get_started" class="ui huge primary button">
-                    <a class="secondary" href="#.ui.vertical.stripe.segment.description">Get Started <i class="right arrow icon"></i></a>
+                    <a id="get_started" class="secondary" href="#.ui.vertical.stripe.segment.description">Get Started <i class="right arrow icon"></i></a>
                 </div>
             </div>
 
@@ -91,61 +91,56 @@
                         <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be
                             bioengineered.</p>
                     </div>
-                    <div class="six wide right floated column">
-                        {#                        <img src="" class="ui large bordered rounded image">#}
+                    <div class="eight wide right floated column">
+                        <div class="animate grid">
+
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="center aligned column">
-                        <a class="ui huge button">Check Them Out</a>
+                        <a class="ui huge button" href="#.ui.vertical.stripe.quote.segment.more">更多精彩</a>
                     </div>
                 </div>
             </div>
         </div>
 
 
-        <div class="ui vertical stripe quote segment">
+        <div class="ui vertical stripe quote segment more">
             <div class="ui equal width stackable internally celled grid">
                 <div class="center aligned row">
                     <div class="column">
-                        <h3>"What a Company"</h3>
+                        <h3>精彩书城</h3>
 
-                        <p>That is what they all say about us</p>
+                        <p>精彩纷呈,......Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention
+                        精彩纷呈,......Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention精彩纷呈,......Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention
+                            精彩纷呈,......Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention
+                        </p>
                     </div>
                     <div class="column">
-                        <h3>"I shouldn't have gone with their competitor."</h3>
+                        <h3>我的书柜</h3>
 
                         <p>
-                            {#                            <img src="" class="ui avatar image"> #}
-                            <b>Nan</b> Chief Fun
-                            Officer Acme Toys
+                            我的珍藏精品 精彩纷呈,......Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="ui vertical stripe segment">
+        <div class="ui vertical stripe segment my">
             <div class="ui text container">
-                <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
+                <h3 class="ui header">我的阅读,记录点点滴滴...</h3>
 
                 <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing
                     nothing by providing massive amounts of whitespace and generic content that can seem massive,
                     monolithic and worth your attention.</p>
                 <a class="ui large button">Read More</a>
                 <h4 class="ui horizontal header divider">
-                    <a href="#">Case Studies</a>
+                    <a href="#.segment.header">回到顶部</a>
                 </h4>
-
-                <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
-
-                <p>Yes I know you probably disregarded the earlier boasts as non-sequitor filler content, but its really
-                    true. It took years of gene splicing and combinatory DNA research, but our bananas can really
-                    dance.</p>
-                <a class="ui large button">I'm Still Quite Interested</a>
             </div>
         </div>
-
 
         <div class="ui inverted vertical footer segment">
             <div class="ui container">
@@ -181,7 +176,4 @@
     </div>
 
 {#      <h2 name='wassup'>I have a class of ".wassup"</h2>#}
-  <p class="wassup">
-    Nunc ullamcorper neque vel nibh porttitor mattis. Integer orci lacus, lacinia et vestibulum id, elementum non metus. Nullam in ligula vel libero ultrices dignissim vitae non neque. Maecenas posuere mattis enim sed placerat. Aliquam sed augue quis justo lacinia laoreet. Donec purus sem, condimentum sit amet dapibus vulputate, luctus quis mauris. Sed dapibus purus quis neque blandit dignissim. Sed luctus convallis imperdiet. Sed id dolor eget sapien facilisis fermentum sit amet sit amet nibh. Suspendisse et adipiscing augue. Nam eu nisi lacinia arcu sollicitudin fringilla ac a neque. Vivamus feugiat mattis lectus, eget volutpat mi semper in. Integer tincidunt tincidunt odio, vel cursus quam aliquam sit amet.
-  </p>
 {% endblock %}

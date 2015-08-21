@@ -36,7 +36,7 @@
 }
 
 .ui.vertical.stripe {
-    padding: 8em 0em;
+    padding: 8em 0em 0px 0em;
 }
 
 .ui.vertical.stripe h3 {
@@ -61,7 +61,7 @@
 }
 
 .quote.stripe.segment {
-    padding: 0em;
+    padding: 28px;
 }
 
 .quote.stripe.segment .grid .column {
@@ -105,3 +105,30 @@
         font-size: 1.5em;
     }
 }
+
+/**  */
+
+.animate.grid {
+    width: 600px;
+    height: 300px;
+    margin: 100px auto 50px auto;
+    perspective: 500px;
+    /*For 3d*/
+}
+.animate.grid img {
+    width: 60px;
+    height: 60px;
+    display: block;
+    float: left;
+    margin: 4px;
+
+    /*-webkit-border-radius: 8px;*/
+    /*-moz-border-radius: 8px;*/
+    /*border-radius: 8px;*/
+    -webkit-box-shadow: #666 0px 0px 10px;
+    -moz-box-shadow: #666 0px 0px 100px;
+    box-shadow: #666 0px 0px 10px;
+    /*background: #EEFF99;*/
+}
+
+/** */
