@@ -2,6 +2,10 @@
             Global
 *******************************/
 
+.button a {
+    color:#FFFFFF;
+}
+
 .hidden.menu {
     display: none;
 }

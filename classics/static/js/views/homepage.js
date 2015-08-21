@@ -22,5 +22,13 @@ $(document)
             .sidebar('attach events', '.toc.item')
         ;
 
+        //config the scroll
+          //window.AA_CONFIG = {
+          //  animationLength:  1500,
+          //  easingFunction:   'easeOutCirc',
+          //  readyEvent:       'aa-ready',
+          //  scrollOffset:     30
+          //};
+
     })
 ;
