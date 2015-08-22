@@ -40,7 +40,7 @@ $(document)
         var d = 0; //delay
         var ry, tz, s; //transform params
         //animation time
-        $("#get_started").on("click", function () {
+        $("#rand_change").on("click", function () {
                 //fading out the thumbnails with style
                 $("img").each(function () {
                         d = Math.random() * 1000; //1ms to 1000ms delay
@@ -80,7 +80,7 @@ $(document)
                                 $(this).css("transform", "rotateY(" + ry + "deg) translateZ(" + tz + "px)");
                             }
                             , duration: 3000, //some easing fun. Comes from the jquery easing plugin.
-                            easing: 'easeOutQuint',
+                            easing: 'easeOutQuint'
                         }
                     )
                 }
