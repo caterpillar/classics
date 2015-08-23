@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+
+{% block title %}致敬经典|书城{% endblock %}
+{% block stylesheet %}
+    <link href="../../static/css/views/books/library.css" rel='stylesheet' type='text/css'/>
+{% endblock %}
+{% block javascript %}
+    <script src="../../static/js/views/books/library.js"></script>
+{% endblock %}
+{% block content %}
+
+    <!-- Following Menu -->
+    {#    <div class="ui large top fixed hidden menu">#}
+    {#        <div class="ui container">#}
+    {#            <a class="active item">首页</a>#}
+    {#            <a class="item">书柜</a>#}
+    {#            <a class="item">书城</a>#}
+    {#            <a class="item">上一次阅读</a>#}
+    {##}
+    {#            <div class="right menu">#}
+    {#                <div class="item">#}
+    {#                    <a class="ui button">登录</a>#}
+    {#                </div>#}
+    {#                <div class="item">#}
+    {#                    <a class="ui primary button">退出</a>#}
+    {#                </div>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </div>#}
+
+    <!-- Page Contents -->
+    <div class="pusher">
+        <div class="ui inverted vertical masthead center aligned segment header">
+            <div class="ui container">
+                <div class="ui large secondary inverted pointing menu">
+                    <a class="toc item">
+                        <i class="sidebar icon"></i>
+                    </a>
+                    <a class="item" href="/">主页</a>
+                    <a class="item active" href="library">书城</a>
+                    <a class="item">书柜</a>
+                    <a class="item">上一次阅读</a>
+
+                    <div class="right item">
+                        <a class="ui inverted button">登录</a>
+                        <a class="ui inverted button">退出</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui text container">
+                <!--
+                <h1 class="ui inverted header">
+                    品读经典,回味人生
+                </h1>
+
+                <h2 style="text-align: left">
+                    时光匆匆，岁月如梭，当青春正以白驹过隙般的速度渐行渐远，年轻的我们，何不在品读经典的曼妙体验中，洗去一路的风尘、迎来一生的芬芳......
+                </h2>
+                -->
+
+            </div>
+
+        </div>
+        <div class="ui horizontal stripe">
+            <div class="ui middle aligned centered stackable grid container top flags">
+                <div class="eight column row">
+                    <div class="column orange flag">
+                        <a href="#">中国文学</a>
+                    </div>
+                    <div class="column olive flag">
+                        <a href="#">外国文学</a>
+                    </div>
+                    <div class="column teal flag">
+                        <a href="#">古代经典</a>
+                    </div>
+                    <div class="column blue flag">
+                        <a href="#">诗词歌赋</a>
+                    </div>
+                    <div class="column purple flag">
+                        <a href="#">外文原著</a>
+                    </div>
+                    <div class="column pink flag">
+                        <a href="#">励志学习</a>
+                    </div>
+                    <div class="column brown flag">
+                        <a href="#">其他</a>
+                    </div>
+                    {#                    <div class="column">8</div>#}
+                </div>
+            </div>
+        </div>
+        <div class="ui vertical stripe segment library">
+            <div class="ui middle aligned stackable grid container">
+                <div class="row">
+                    <div id="library_book_list" class="ui five column grid" style="text-align: center;">
+                        <div class="right ui rail" style="min-height: 263px;">
+                            <div class="ui sticky" style="left: 1319px; width: 272px; height: 263px;">
+                                <h3 class="ui header">Stuck Content</h3>
+                                <img class="ui wireframe image" src="../../static/examples/assets/images/wireframe/image.png">
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                        <div class="column">
+                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    {#      <h2 name='wassup'>I have a class of ".wassup"</h2>#}
+{% endblock %}
