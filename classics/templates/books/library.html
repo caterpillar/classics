@@ -33,9 +33,9 @@
         <div class="ui inverted vertical masthead center aligned segment header">
             <div class="ui container">
                 <div class="ui large secondary inverted pointing menu">
-                    <a class="toc item">
-                        <i class="sidebar icon"></i>
-                    </a>
+{#                    <a class="toc item">#}
+{#                        <i class="sidebar icon"></i>#}
+{#                    </a>#}
                     <a class="item" href="/">主页</a>
                     <a class="item active" href="library">书城</a>
                     <a class="item">书柜</a>
@@ -124,11 +124,27 @@
 
                         <div class="ui six column grid container">
                             {% for item in book_count_list %}
-                                <div class="column html ui top attached">
-
-                                    <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                                    <span>{{ item }}</span>
-                                    <div class="ui divider"></div>
+                                <div class="ui wide column book">
+                                    <div class="content">
+                                        <a href="#">
+                                            <img class="ui image" style="width: 240px;height: 180px;"
+                                                 src="../../static/examples/assets/images/wireframe/image.png">
+                                            <div class="item"><span>红楼梦</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="ui items">
+                                        <div class="item">
+                                            <div class="content info">
+                                                <div class="meta author">
+                                                    <span><i class="user icon"></i>曹雪芹</span>
+                                                </div>
+                                                <div class="meta likes">
+                                                    <a class="like"><i class="like icon"></i></a> {{ item }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+{#                                    <div class="ui divider"></div>#}
                                 </div>
                             {% endfor %}
 

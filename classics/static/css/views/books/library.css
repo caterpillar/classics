@@ -37,6 +37,22 @@
     margin-top: 0.3em;
 }
 
+.book .info .meta {
+    display: inline;
+}
+
+.book .info .meta.author {
+    float: left;
+}
+
+.book .items {
+    margin-top: 0.2em;
+}
+
+.book .info .meta.likes {
+    float: right;
+}
+
 
 
 .grid.container {
