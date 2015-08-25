@@ -5,4 +5,5 @@ from django.shortcuts import render_to_response
 
 
 def library(request):
-    return render_to_response('books/library.html')
+    book_count_list = range(100)
+    return render_to_response('books/library.html', {'book_count_list': book_count_list})

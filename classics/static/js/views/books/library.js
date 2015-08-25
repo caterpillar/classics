@@ -24,6 +24,8 @@ $(document)
 
         $('.ui.sticky')
           .sticky({
+            offset       : 200,
+            bottomOffset : 200,
             context: '#library_book_list'
           })
         ;

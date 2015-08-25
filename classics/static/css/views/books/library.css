@@ -20,6 +20,25 @@
     font-size: 1.42857143rem;
 }
 
+.book_list {
+    text-align: center;
+}
+
+.ui.sticky {
+    text-align: left;
+}
+
+.ui.sticky .labels {
+    /*text-align: left;*/
+    margin-top: 10px;
+}
+
+.ui.sticky .ui.label {
+    margin-top: 0.3em;
+}
+
+
+
 .grid.container {
     margin: 0px auto;
 }

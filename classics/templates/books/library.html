@@ -93,85 +93,45 @@
         <div class="ui vertical stripe segment library">
             <div class="ui middle aligned stackable grid container">
                 <div class="row">
-                    <div id="library_book_list" class="ui five column grid" style="text-align: center;">
-                        <div class="right ui rail" style="min-height: 263px;">
-                            <div class="ui sticky" style="left: 1319px; width: 272px; height: 263px;">
-                                <h3 class="ui header">Stuck Content</h3>
-                                <img class="ui wireframe image" src="../../static/examples/assets/images/wireframe/image.png">
+                    <div id="library_book_list" class="ui five column grid book_list">
+                        <div class="right ui rail ">
+                            <div class="ui sticky">
+                                <div class="ui search">
+                                    <div class="ui icon input">
+                                        <input class="prompt" type="text" placeholder="要搜索的内容...">
+                                        <i class="search icon"></i>
+                                    </div>
+                                    <div class="results"></div>
+                                </div>
+
+                                <div class="ui labels">
+                                    <a class="ui red label">Red</a>
+                                    <a class="ui orange label">Orange</a>
+                                    <a class="ui yellow label">Yellow</a>
+                                    <a class="ui olive label">Olive</a>
+                                    <a class="ui green label" style="margin:  0.5em;">Green</a>
+                                    <a class="ui teal label">Teal</a>
+                                    <a class="ui blue label">Blue</a>
+                                    <a class="ui violet label">Violet</a>
+                                    <a class="ui purple label">Purple</a>
+                                    <a class="ui pink label">Pink</a>
+                                    <a class="ui brown label">褐色</a>
+                                    <a class="ui grey label">灰色</a>
+                                    <a class="ui black label">Black</a>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
-                        </div>
-                        <div class="column">
-                            <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                        <div class="ui six column grid container">
+                            {% for item in book_count_list %}
+                                <div class="column html ui top attached">
+
+                                    <img class="ui image" src="../../static/examples/assets/images/wireframe/image.png">
+                                    <span>{{ item }}</span>
+                                    <div class="ui divider"></div>
+                                </div>
+                            {% endfor %}
+
                         </div>
                     </div>
                 </div>
