@@ -94,6 +94,35 @@
             <div class="ui middle aligned stackable grid container">
                 <div class="row">
                     <div id="library_book_list" class="ui five column grid book_list">
+
+
+                        <div class="ui six column grid container books">
+                            {% for item in book_count_list %}
+                                <div class="ui wide column book">
+                                    <div class="content">
+                                        <a href="#">
+                                            <img class="ui image" style="width: 240px;height: 180px;"
+                                                 src="../../static/examples/assets/images/wireframe/image.png">
+                                            <div class="item"><span>红楼梦</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="ui items">
+                                        <div class="item">
+                                            <div class="content info">
+                                                <div class="meta author">
+                                                    <span><i class="user icon"></i>曹雪芹</span>
+                                                </div>
+                                                <div class="meta likes">
+                                                    <a class="like"><i class="like icon"></i></a> {{ item }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+
+                        </div>
+
                         <div class="right ui rail ">
                             <div class="ui sticky">
                                 <div class="ui search">
@@ -120,34 +149,6 @@
                                     <a class="ui black label">Black</a>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="ui six column grid container">
-                            {% for item in book_count_list %}
-                                <div class="ui wide column book">
-                                    <div class="content">
-                                        <a href="#">
-                                            <img class="ui image" style="width: 240px;height: 180px;"
-                                                 src="../../static/examples/assets/images/wireframe/image.png">
-                                            <div class="item"><span>红楼梦</span></div>
-                                        </a>
-                                    </div>
-                                    <div class="ui items">
-                                        <div class="item">
-                                            <div class="content info">
-                                                <div class="meta author">
-                                                    <span><i class="user icon"></i>曹雪芹</span>
-                                                </div>
-                                                <div class="meta likes">
-                                                    <a class="like"><i class="like icon"></i></a> {{ item }}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-{#                                    <div class="ui divider"></div>#}
-                                </div>
-                            {% endfor %}
-
                         </div>
                     </div>
                 </div>
