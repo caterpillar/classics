@@ -6,6 +6,8 @@
 {% endblock %}
 {% block javascript %}
     <script src="../../static/js/views/books/library.js"></script>
+    <script src="../static/js/lib/jquery.easing.1.3.js"></script>
+    <script src="../static/js/plugins/jquery.arbitrary-anchor.js"></script>
 {% endblock %}
 {% block content %}
 
@@ -38,7 +40,7 @@
 {#                    </a>#}
                     <a class="item" href="/">主页</a>
                     <a class="item active" href="library">书城</a>
-                    <a class="item">书柜</a>
+                    <a class="item">书架</a>
                     <a class="item">上一次阅读</a>
 
                     <div class="right item">
@@ -64,26 +66,26 @@
         </div>
         <div class="ui horizontal stripe">
             <div class="ui middle aligned centered stackable grid container top flags">
-                <div class="eight column row">
-                    <div class="column orange flag">
+                <div class="ui eight column row container" >
+                    <div class="ui column orange flag">
                         <a href="#">中国文学</a>
                     </div>
-                    <div class="column olive flag">
+                    <div class="ui column olive flag">
                         <a href="#">外国文学</a>
                     </div>
-                    <div class="column teal flag">
+                    <div class="ui column teal flag">
                         <a href="#">古代经典</a>
                     </div>
-                    <div class="column blue flag">
+                    <div class="ui column blue flag">
                         <a href="#">诗词歌赋</a>
                     </div>
-                    <div class="column purple flag">
+                    <div class="ui column purple flag">
                         <a href="#">外文原著</a>
                     </div>
-                    <div class="column pink flag">
+                    <div class="ui column pink flag">
                         <a href="#">励志学习</a>
                     </div>
-                    <div class="column brown flag">
+                    <div class="ui column brown flag">
                         <a href="#">其他</a>
                     </div>
                     {#                    <div class="column">8</div>#}
@@ -92,11 +94,9 @@
         </div>
         <div class="ui vertical stripe segment library">
             <div class="ui middle aligned stackable grid container">
-                <div class="row">
+{#                <div>#}
                     <div id="library_book_list" class="ui five column grid book_list">
-
-
-                        <div class="ui six column grid container books">
+                        <div class="ui six column grid container row books">
                             {% for item in book_count_list %}
                                 <div class="ui wide column book">
                                     <div class="content">
@@ -138,7 +138,7 @@
                                     <a class="ui orange label">Orange</a>
                                     <a class="ui yellow label">Yellow</a>
                                     <a class="ui olive label">Olive</a>
-                                    <a class="ui green label" style="margin:  0.5em;">Green</a>
+                                    <a class="ui green label">Green</a>
                                     <a class="ui teal label">Teal</a>
                                     <a class="ui blue label">Blue</a>
                                     <a class="ui violet label">Violet</a>
@@ -148,10 +148,16 @@
                                     <a class="ui grey label">灰色</a>
                                     <a class="ui black label">Black</a>
                                 </div>
+
+                                <div class="ui">
+                                    <h4 class="ui horizontal header divider">
+                                        <a href="#.segment.header">回到顶部</a>
+                                    </h4>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+{#                </div>#}
             </div>
         </div>
 

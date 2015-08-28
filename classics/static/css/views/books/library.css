@@ -1,7 +1,7 @@
 .masthead.segment {
     min-height: 230px;
     padding: 1em 0em;
-    background-image: url('../../../img/alejandroescamilla-book.jpg') !important;
+    background-image: url('../../../img/1.jpg') !important;
     background-repeat: no-repeat !important;
     background-size: 100% !important;
 }
@@ -51,6 +51,14 @@
 
 .book .info .meta.likes {
     float: right;
+}
+
+.masthead .logo.item img {
+    margin-right: 1em;
+}
+
+.masthead .ui.menu .ui.button {
+    margin-left: 0.5em;
 }
 
 

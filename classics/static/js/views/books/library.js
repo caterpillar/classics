@@ -33,7 +33,7 @@ $(document)
                     // loads a max of 5 times
                     //alert(event)
 
-                    var book_html = '<div class="ui wide column book">'
+                    var book_html = '<div class="ui column book">'
                         + '                <div class="content">'
                         + '                    <a href="#">'
                         + '                       <img class="ui image" style="width: 240px;height: 180px;"'
@@ -48,7 +48,7 @@ $(document)
                         + '                                <span><i class="user icon"></i>曹雪芹</span>'
                         + '                            </div>'
                         + '                            <div class="meta likes">'
-                        + '                                <a class="like"><i class="like icon"></i></a> {{ item }}'
+                        + '                                <a class="like"><i class="like icon"></i></a> 3'
                         + '                            </div>'
                         + '                        </div>'
                         + '                    </div>'
