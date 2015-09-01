@@ -2,56 +2,12 @@
 
 {% block title %}致敬经典|书架{% endblock %}
 {% block stylesheet %}
-    {#    <link href="../../static/css/plugins/modernizr.custom.34978.css" rel="stylesheet" type="text/css"/>#}
     <link href="../../static/css/views/books/bookblock.css" rel='stylesheet' type='text/css'/>
-    {#    <link href="../../static/css/plugins/bookblock.css" rel="stylesheet" type="text/css"/>#}
-    {#    <link href="../../static/css/plugins/jquery.jscrollpane.custom.css" rel="stylesheet" type="text/css"/>#}
-    {#    <link href="../../static/css/plugins/modernizr.custom.34978.css" rel="stylesheet" type="text/css"/>#}
     <link href="../../static/css/views/books/book.css" rel="stylesheet" type="text/css"/>
 {% endblock %}
 {% block javascript %}
-    {#    <script src="../../static/js/plugins/jquery.mousewheel.js"></script>#}
-    {#    <script src="../../static/js/plugins/jquery.jscrollpane.min.js"></script>#}
-    {#    <script src="../../static/js/plugins/jquerypp.custom.js"></script>#}
-    {#    <script src="../../static/js/plugins/jquery.bookblock.js"></script>#}
-    {#    <script src="../../static/js/plugins/modernizr.custom.79639.js"></script>#}
-    {#    <script src="../../static/js/views/books/page.js"></script>#}
-    <script src="../../static/js/plugins/turn.min.js"></script>
     <script src="../../static/js/views/books/book.js"></script>
 
-    <script type="text/javascript">
-{#        $(window).ready(function () {#}
-{#            $('#book_content').turn({#}
-{#                display: 'single',#}
-{#                acceleration: true,#}
-{#                gradients: !$.isTouch,#}
-{#                elevation: 50,#}
-{#                when: {#}
-{#                    turned: function (e, page) {#}
-{#                        /*console.log('Current view: ', $(this).turn('view'));*/#}
-{#                    }#}
-{#                }#}
-{#            });#}
-{#        });#}
-{##}
-{##}
-{#        $(window).bind('keydown', function (e) {#}
-{#            if (e.keyCode == 37)#}
-{#                $('#book_content').turn('previous');#}
-{#            else if (e.keyCode == 39)#}
-{#                $('#book_content').turn('next');#}
-{##}
-{#        });#}
-{##}
-{#        $('.ui.sidebar.right.menu .item').on('click', function() {#}
-{#            var $item = $(this);#}
-{#            var page_data = $item.attr('page-data');#}
-{#            $('.scroller.content').css('display', 'none');#}
-{#            $('#' + page_data).css('display', 'block');#}
-{#            $('#book_content').turn('next');#}
-{#        })#}
-
-    </script>
 {% endblock %}
 {% block content %}
     <div class="ui sidebar right inverted vertical menu">
@@ -69,8 +25,8 @@
     <div class="pusher">
         <div class="ui borderless main menu">
             <div class="ui text container">
-                <a href="#" class="item"><i class="chevron left icon"></i>Pre</a>
-                <a href="#" class="item"><i class="chevron right icon"></i>Next</a>
+                <a href="#" id="bb-nav-prev" class="item"><i class="chevron left icon"></i>Pre</a>
+                <a href="#" id="bb-nav-next" class="item"><i class="chevron right icon"></i>Next</a>
 
                 <div href="#" class="header right item chapter">
                     {#                    <img class="logo" src="assets/images/logo.png">#}
@@ -81,7 +37,7 @@
 
 
         <div id="book_content">
-            <div class="scroller content" id="chapter1">
+            <div class="chapter content display" id="chapter1">
                 <h2>第一回 甄士隐梦幻识通灵 贾雨村风尘怀闺秀</h2>
 
                 <p>此开卷第一回也．作者自云：因曾历过一番梦幻之后，故将真事隐去，而借&rdquo;通灵&rdquo;之说，撰此《石头记》一书也．故曰&rdquo;甄士隐&rdquo;云云．但书中所记何事何人？自又云：“今风尘碌碌，一事无成，忽念及当日所有之女子，一一细考较去，觉其行止见识，皆出于我之上．何我堂堂须眉，诚不若彼裙钗哉？实愧则有余，悔又无益之大无可如何之日也！当此，则自欲将已往所赖天恩祖德，锦衣纨绔之时，饫甘餍肥之日，背父兄教育之恩，负师友规谈之德，以至今日一技无成，半生潦倒之罪，编述一集，以告天下人：我之罪固不免，然闺阁中本自历历有人，万不可因我之不肖，自护己短，一并使其泯灭也．虽今日之茅椽蓬牖，瓦灶绳床，其晨夕风露，阶柳庭花，亦未有妨我之襟怀笔墨者．虽我未学，下笔无文，又何妨用假语村言，敷演出一段故事来，亦可使闺阁昭传，复可悦世之目，破人愁闷，不亦宜乎？&rdquo;故曰&rdquo;贾雨村&rdquo;云云．</p>
@@ -186,7 +142,7 @@
                     这日，那甄家大丫鬟在门前买线，忽听街上喝道之声，众人都说新太爷到任．丫鬟于是隐在门内看时，只见军牢快手，一对一对的过去，俄而大轿抬着一个乌帽猩袍的官府过去．丫鬟倒发了个怔，自思这官好面善，倒象在那里见过的．于是进入房中，也就丢过不在心上．至晚间，正待歇息之时，忽听一片声打的门响，许多人乱嚷，说：“本府太爷差人来传人问话。”封肃听了，唬得目瞪口呆，不知有何祸事．</p>
             </div>
 
-           {% comment %} <div class="scroller content" id="chapter2">
+             <div class="chapter content" id="chapter2">
                 <h2>第二回 贾夫人仙逝扬州城 冷子兴演说荣国府</h2>
 
                 <p>诗云</p>
@@ -244,7 +200,7 @@
 
                 <p>
                     雨村听了，笑道：“可知我前言不谬．你我方才所说的这几个人，都只怕是那正邪两赋而来一路之人，未可知也。”子兴道：“邪也罢，正也罢，只顾算别人家的帐，你也吃一杯酒才好。”雨村道：“正是，只顾说话，竟多吃了几杯。”子兴笑道：“说着别人家的闲话，正好下酒，即多吃几杯何妨。”雨村向窗外看道：“天也晚了，仔细关了城．我们慢慢的进城再谈，未为不可。”于是，二人起身，算还酒帐．方欲走时，又听得后面有人叫道：“雨村兄，恭喜了！特来报个喜信的。”雨村忙回头看时</p>
-            </div>{% endcomment %}
+            </div>
         </div>
 
     </div>

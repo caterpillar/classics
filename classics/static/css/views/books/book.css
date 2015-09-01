@@ -1,0 +1,7 @@
+.book_content .chapter.content {
+    display: none;
+}
+
+.book_content .chapter.content.display {
+    display: block;
+}
