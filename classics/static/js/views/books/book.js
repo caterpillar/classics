@@ -3,6 +3,7 @@
  */
 $(function () {
 
+    // chapter menu toggle
     $('.main.menu .chapter').on('click', function () {
         $('.ui.sidebar')
             .sidebar('setting', 'transition', 'overlay')
@@ -13,6 +14,19 @@ $(function () {
     $('.main.menu').visibility({
         type: 'fixed'
     });
+
+    // fix menu when passed
+    $('#book_content')
+        .visibility({
+            once: false,
+            onBottomPassed: function () {
+                $('.main.menu').transition('fade in');
+            },
+            onBottomPassedReverse: function () {
+                $('.main.menu').transition('fade out');
+            }
+        })
+    ;
 
     $('#bb-nav-prev').on('click', function() {
         var display_chapter = $('.chapter.content.display');
